@@ -1,6 +1,5 @@
 package net.justinchoi.dsalgo.binary_search;
 
-import java.util.Collections;
 import java.util.List;
 
 public class BinarySearch {
@@ -31,7 +30,7 @@ public class BinarySearch {
     }
 
     private static int binarySearchRecursive(List<Integer> numbers, int target, int lowIndex, int highIndex) {
-        if (lowIndex > numbers.size() - 1 || highIndex < 0 ) { return -1; }
+        if (lowIndex > highIndex) { return -1; }
         int midIndex = (lowIndex + highIndex) / 2;
         int currentNumber = numbers.get(midIndex);
         if (currentNumber == target) { return midIndex; }
