@@ -20,7 +20,6 @@ public class SorterTestCases {
     final List<Integer> identical = new ArrayList<>(Arrays.asList(1,1,1,1,1,1,1,1,1));
     final List<Integer> identicalExpected = new ArrayList<>(Arrays.asList(1,1,1,1,1,1,1,1,1));
 
-
     public SorterTestCases() throws IOException {
         this.large = setupLargeCase();
         this.largeExpected = setupLargeCaseExpected();
